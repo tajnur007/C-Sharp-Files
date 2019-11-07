@@ -1,0 +1,10 @@
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\bin\Debug\Simple Arithmetic Program.exe.config
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\bin\Debug\Simple Arithmetic Program.exe
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\bin\Debug\Simple Arithmetic Program.pdb
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\obj\Debug\Simple Arithmetic Program.csprojAssemblyReference.cache
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\obj\Debug\Simple_Arithmetic_Program.SimpleArithmeticProgram.resources
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\obj\Debug\Simple_Arithmetic_Program.Properties.Resources.resources
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\obj\Debug\Simple Arithmetic Program.csproj.GenerateResource.cache
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\obj\Debug\Simple Arithmetic Program.csproj.CoreCompileInputs.cache
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\obj\Debug\Simple Arithmetic Program.exe
+D:\C#\Simple Arithmetic Program\Simple Arithmetic Program\obj\Debug\Simple Arithmetic Program.pdb
