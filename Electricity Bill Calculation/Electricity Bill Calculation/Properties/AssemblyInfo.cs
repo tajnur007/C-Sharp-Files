@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Simple Arithmetic Program")]
+[assembly: AssemblyTitle("Electricity Bill Calculation")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Simple Arithmetic Program")]
+[assembly: AssemblyProduct("Electricity Bill Calculation")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("92d4815e-c377-4368-813c-b97569bc55c3")]
+[assembly: Guid("ae95aa18-cde5-489a-b098-93c1ada6ef41")]
 
 // Version information for an assembly consists of the following four values:
 //

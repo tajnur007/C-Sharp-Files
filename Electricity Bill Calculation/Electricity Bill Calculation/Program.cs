@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Simple_Arithmetic_Program
+namespace Electricity_Bill_Calculation
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Simple_Arithmetic_Program
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SimpleArithmeticProgram());
+            Application.Run(new ElectricityBillCalculation());
         }
     }
 }

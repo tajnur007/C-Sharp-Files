@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Simple_Arithmetic_Program.Properties
+namespace Electricity_Bill_Calculation.Properties
 {
 
 

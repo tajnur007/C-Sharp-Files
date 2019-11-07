@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92D4815E-C377-4368-813C-B97569BC55C3}</ProjectGuid>
+    <ProjectGuid>{AE95AA18-CDE5-489A-B098-93C1ADA6EF41}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Simple_Arithmetic_Program</RootNamespace>
-    <AssemblyName>Simple Arithmetic Program</AssemblyName>
+    <RootNamespace>Electricity_Bill_Calculation</RootNamespace>
+    <AssemblyName>Electricity Bill Calculation</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

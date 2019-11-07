@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Simple_Arithmetic_Program.Properties
+namespace Electricity_Bill_Calculation.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace Simple_Arithmetic_Program.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Simple_Arithmetic_Program.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Electricity_Bill_Calculation.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
