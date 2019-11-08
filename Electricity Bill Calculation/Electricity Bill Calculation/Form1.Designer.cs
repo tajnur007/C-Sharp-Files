@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.connectionTypeGroupBox = new System.Windows.Forms.GroupBox();
-            this.residentialRadioButton = new System.Windows.Forms.RadioButton();
-            this.commercialRadioButton = new System.Windows.Forms.RadioButton();
             this.industrialRadioButton = new System.Windows.Forms.RadioButton();
+            this.commercialRadioButton = new System.Windows.Forms.RadioButton();
+            this.residentialRadioButton = new System.Windows.Forms.RadioButton();
             this.kwhUsedGroupBox = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.peakHourTextBox = new System.Windows.Forms.TextBox();
             this.offPeakHourTextBox = new System.Windows.Forms.TextBox();
+            this.peakHourTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.calculateBillButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.totalBillTextBox = new System.Windows.Forms.TextBox();
@@ -57,17 +57,17 @@
             this.connectionTypeGroupBox.TabStop = false;
             this.connectionTypeGroupBox.Text = "Connection Type";
             // 
-            // residentialRadioButton
+            // industrialRadioButton
             // 
-            this.residentialRadioButton.AutoSize = true;
-            this.residentialRadioButton.Location = new System.Drawing.Point(39, 46);
-            this.residentialRadioButton.Name = "residentialRadioButton";
-            this.residentialRadioButton.Size = new System.Drawing.Size(106, 24);
-            this.residentialRadioButton.TabIndex = 0;
-            this.residentialRadioButton.TabStop = true;
-            this.residentialRadioButton.Text = "Residential";
-            this.residentialRadioButton.UseVisualStyleBackColor = true;
-            this.residentialRadioButton.CheckedChanged += new System.EventHandler(this.ResidentialRadioButton_CheckedChanged);
+            this.industrialRadioButton.AutoSize = true;
+            this.industrialRadioButton.Location = new System.Drawing.Point(39, 126);
+            this.industrialRadioButton.Name = "industrialRadioButton";
+            this.industrialRadioButton.Size = new System.Drawing.Size(92, 24);
+            this.industrialRadioButton.TabIndex = 2;
+            this.industrialRadioButton.TabStop = true;
+            this.industrialRadioButton.Text = "Industrial";
+            this.industrialRadioButton.UseVisualStyleBackColor = true;
+            this.industrialRadioButton.CheckedChanged += new System.EventHandler(this.IndustrialRadioButton_CheckedChanged);
             // 
             // commercialRadioButton
             // 
@@ -81,17 +81,17 @@
             this.commercialRadioButton.UseVisualStyleBackColor = true;
             this.commercialRadioButton.CheckedChanged += new System.EventHandler(this.CommercialRadioButton_CheckedChanged);
             // 
-            // industrialRadioButton
+            // residentialRadioButton
             // 
-            this.industrialRadioButton.AutoSize = true;
-            this.industrialRadioButton.Location = new System.Drawing.Point(39, 126);
-            this.industrialRadioButton.Name = "industrialRadioButton";
-            this.industrialRadioButton.Size = new System.Drawing.Size(92, 24);
-            this.industrialRadioButton.TabIndex = 2;
-            this.industrialRadioButton.TabStop = true;
-            this.industrialRadioButton.Text = "Industrial";
-            this.industrialRadioButton.UseVisualStyleBackColor = true;
-            this.industrialRadioButton.CheckedChanged += new System.EventHandler(this.IndustrialRadioButton_CheckedChanged);
+            this.residentialRadioButton.AutoSize = true;
+            this.residentialRadioButton.Location = new System.Drawing.Point(39, 46);
+            this.residentialRadioButton.Name = "residentialRadioButton";
+            this.residentialRadioButton.Size = new System.Drawing.Size(106, 24);
+            this.residentialRadioButton.TabIndex = 0;
+            this.residentialRadioButton.TabStop = true;
+            this.residentialRadioButton.Text = "Residential";
+            this.residentialRadioButton.UseVisualStyleBackColor = true;
+            this.residentialRadioButton.CheckedChanged += new System.EventHandler(this.ResidentialRadioButton_CheckedChanged);
             // 
             // kwhUsedGroupBox
             // 
@@ -107,14 +107,21 @@
             this.kwhUsedGroupBox.TabStop = false;
             this.kwhUsedGroupBox.Text = "KWH Used";
             // 
-            // label1
+            // offPeakHourTextBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Peak Hour";
+            this.offPeakHourTextBox.Location = new System.Drawing.Point(135, 105);
+            this.offPeakHourTextBox.Name = "offPeakHourTextBox";
+            this.offPeakHourTextBox.Size = new System.Drawing.Size(142, 26);
+            this.offPeakHourTextBox.TabIndex = 3;
+            this.offPeakHourTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OffPeakHourTextBox_KeyPress);
+            // 
+            // peakHourTextBox
+            // 
+            this.peakHourTextBox.Location = new System.Drawing.Point(135, 61);
+            this.peakHourTextBox.Name = "peakHourTextBox";
+            this.peakHourTextBox.Size = new System.Drawing.Size(142, 26);
+            this.peakHourTextBox.TabIndex = 2;
+            this.peakHourTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PeakHourTextBox_KeyPress);
             // 
             // label2
             // 
@@ -125,20 +132,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Off-Peak Hour";
             // 
-            // peakHourTextBox
+            // label1
             // 
-            this.peakHourTextBox.Location = new System.Drawing.Point(135, 61);
-            this.peakHourTextBox.Name = "peakHourTextBox";
-            this.peakHourTextBox.Size = new System.Drawing.Size(142, 26);
-            this.peakHourTextBox.TabIndex = 2;
-            this.peakHourTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PeakHourTextBox_KeyPress);
-            // 
-            // offPeakHourTextBox
-            // 
-            this.offPeakHourTextBox.Location = new System.Drawing.Point(135, 105);
-            this.offPeakHourTextBox.Name = "offPeakHourTextBox";
-            this.offPeakHourTextBox.Size = new System.Drawing.Size(142, 26);
-            this.offPeakHourTextBox.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(45, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Peak Hour";
             // 
             // calculateBillButton
             // 

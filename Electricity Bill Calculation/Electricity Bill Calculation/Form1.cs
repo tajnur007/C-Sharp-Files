@@ -50,6 +50,11 @@ namespace Electricity_Bill_Calculation
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
+        private void OffPeakHourTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
         private void ResidentialRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             offPeakHourTextBox.Enabled = false;
