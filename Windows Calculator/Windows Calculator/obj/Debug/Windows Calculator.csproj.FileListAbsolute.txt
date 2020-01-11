@@ -1,0 +1,9 @@
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\bin\Debug\Windows Calculator.exe.config
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\bin\Debug\Windows Calculator.exe
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\bin\Debug\Windows Calculator.pdb
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\obj\Debug\Windows Calculator.csprojAssemblyReference.cache
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\obj\Debug\Windows_Calculator.Form1.resources
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\obj\Debug\Windows_Calculator.Properties.Resources.resources
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\obj\Debug\Windows Calculator.csproj.GenerateResource.cache
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\obj\Debug\Windows Calculator.exe
+D:\Programming Practice\C#\Windows Calculator\Windows Calculator\obj\Debug\Windows Calculator.pdb
