@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Loan_Management_System
 {
@@ -16,6 +17,7 @@ namespace Loan_Management_System
         {
             InitializeComponent();
             userFullNameTextBox.Text = fullName;
+            saveButton.Enabled = false;
         }
 
         private void LoanAgreement_FormClosed(object sender, FormClosedEventArgs e)
@@ -101,6 +103,103 @@ namespace Loan_Management_System
             this.Hide();
             AboutUs aboutUs = new AboutUs(fullName);
             aboutUs.Show();
+        }
+
+
+        //Control Buttons
+        //Search Button Procedure
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string searchId = searchTextBox.Text.ToString();
+
+                string sqlQuery = "SELECT * FROM loan_information WHERE loan_id =" + searchId + ";";
+
+                SqlConnection con = new SqlConnection("Data Source=PC-TAJNUR\\SQLEXPRESS;Initial Catalog=LMS;Integrated Security=True");
+                SqlDataAdapter da;
+                DataTable dt = new DataTable();
+                DataRow dr;
+
+                con.Open();
+                da = new SqlDataAdapter(sqlQuery, con);
+                da.Fill(dt);
+                con.Close();
+
+                dr = dt.Rows[0];
+                string loanId = dr[0].ToString();
+
+                if (dt.Rows.Count == 1)
+                {
+                    loanIdTextBox.Text = loanId;
+                }
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Loan ID not found.", "Wrong ID");
+                searchTextBox.Text = null;
+                loanIdTextBox.Text = null;
+            }
+        }
+
+        //Save Button Procedure
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string loanId = loanIdTextBox.Text.ToString();
+
+                string sqlQuery = "UPDATE loan_information SET loan_agreement = 'Accepted' WHERE loan_id = " + loanId + ";";
+
+                SqlConnection con = new SqlConnection("Data Source=PC-TAJNUR\\SQLEXPRESS;Initial Catalog=LMS;Integrated Security=True");
+                SqlCommand sqlcmd = new SqlCommand(sqlQuery, con);
+                con.Open();
+                sqlcmd.ExecuteScalar();
+                con.Close();
+
+                MessageBox.Show("Record saved successfully.", "Successful");
+
+                loanIdTextBox.Text = null;
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Give correct input", "Wrong Information");
+
+            }
+        }
+
+
+
+
+        //Next page
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            String fullName = userFullNameTextBox.Text.ToString();
+            this.Hide();
+            CashReceive cashReceive = new CashReceive(fullName);
+            cashReceive.Show();
+        }
+
+        //Previous page
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            String fullName = userFullNameTextBox.Text.ToString();
+            this.Hide();
+            AccusativeCase accusativeCase = new AccusativeCase(fullName);
+            accusativeCase.Show();
+        }
+
+        private void termsCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (termsCheckBox.Checked)
+            {
+                saveButton.Enabled = true;
+            }
+            else if (!termsCheckBox.Checked)
+            {
+                saveButton.Enabled = false;
+            }
         }
 
 

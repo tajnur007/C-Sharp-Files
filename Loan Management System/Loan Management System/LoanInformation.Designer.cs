@@ -34,13 +34,6 @@
             this.userFullNameTextBox = new System.Windows.Forms.Label();
             this.logoutButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -59,8 +52,34 @@
             this.menuAccusativeCaseButton = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.printButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.nextButton = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.loanTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.loanAmountTextBox = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.customerIdTextBox = new System.Windows.Forms.TextBox();
+            this.loanIdTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cashDueTextBox = new System.Windows.Forms.TextBox();
+            this.cashReceivedTextBox = new System.Windows.Forms.TextBox();
+            this.loanAmount2TextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.menuPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -71,6 +90,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -102,6 +124,7 @@
             // userFullNameTextBox
             // 
             this.userFullNameTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.userFullNameTextBox.ForeColor = System.Drawing.SystemColors.Highlight;
             this.userFullNameTextBox.Location = new System.Drawing.Point(600, 12);
             this.userFullNameTextBox.Name = "userFullNameTextBox";
             this.userFullNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -134,99 +157,6 @@
             this.label1.Size = new System.Drawing.Size(338, 35);
             this.label1.TabIndex = 13;
             this.label1.Text = "LOAN INFORMATION";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(672, 84);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(246, 456);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Control Section";
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("NECK ROMANCER", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(21, 380);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(204, 36);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "PRINT";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("NECK ROMANCER", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(21, 300);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(204, 36);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "DELETE";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("NECK ROMANCER", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(21, 220);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(204, 36);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "UPDATE";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("NECK ROMANCER", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(21, 140);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(204, 36);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "ADD";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(87, 67);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 28);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 26);
-            this.textBox1.TabIndex = 0;
             // 
             // menuPanel
             // 
@@ -474,6 +404,308 @@
             this.pictureBox12.TabIndex = 12;
             this.pictureBox12.TabStop = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.printButton);
+            this.groupBox1.Controls.Add(this.deleteButton);
+            this.groupBox1.Controls.Add(this.saveButton);
+            this.groupBox1.Controls.Add(this.searchButton);
+            this.groupBox1.Controls.Add(this.searchTextBox);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Location = new System.Drawing.Point(672, 132);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(246, 324);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Control Section";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(56, 49);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 20);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Search by Loan ID";
+            // 
+            // printButton
+            // 
+            this.printButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("printButton.BackgroundImage")));
+            this.printButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.printButton.FlatAppearance.BorderSize = 0;
+            this.printButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printButton.Font = new System.Drawing.Font("NECK ROMANCER", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printButton.Location = new System.Drawing.Point(21, 267);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(204, 36);
+            this.printButton.TabIndex = 8;
+            this.printButton.Text = "PRINT";
+            this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("deleteButton.BackgroundImage")));
+            this.deleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteButton.FlatAppearance.BorderSize = 0;
+            this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteButton.Font = new System.Drawing.Font("NECK ROMANCER", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.Location = new System.Drawing.Point(21, 217);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(204, 36);
+            this.deleteButton.TabIndex = 7;
+            this.deleteButton.Text = "DELETE";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("saveButton.BackgroundImage")));
+            this.saveButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveButton.FlatAppearance.BorderSize = 0;
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("NECK ROMANCER", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.Location = new System.Drawing.Point(21, 162);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(204, 36);
+            this.saveButton.TabIndex = 6;
+            this.saveButton.Text = "SAVE";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.searchButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchButton.FlatAppearance.BorderSize = 0;
+            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchButton.Location = new System.Drawing.Point(87, 112);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(80, 28);
+            this.searchButton.TabIndex = 1;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click_1);
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Location = new System.Drawing.Point(6, 76);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(234, 26);
+            this.searchTextBox.TabIndex = 0;
+            // 
+            // nextButton
+            // 
+            this.nextButton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.nextButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.nextButton.FlatAppearance.BorderSize = 0;
+            this.nextButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.nextButton.Location = new System.Drawing.Point(755, 497);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(92, 34);
+            this.nextButton.TabIndex = 9;
+            this.nextButton.Text = "Next  >>";
+            this.nextButton.UseVisualStyleBackColor = false;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.backButton.Location = new System.Drawing.Point(78, 497);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(92, 34);
+            this.backButton.TabIndex = 10;
+            this.backButton.Text = "<< Back";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.loanTypeComboBox);
+            this.groupBox2.Controls.Add(this.loanAmountTextBox);
+            this.groupBox2.Controls.Add(this.nameTextBox);
+            this.groupBox2.Controls.Add(this.customerIdTextBox);
+            this.groupBox2.Controls.Add(this.loanIdTextBox);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.Location = new System.Drawing.Point(78, 132);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(549, 206);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Loan Information";
+            // 
+            // loanTypeComboBox
+            // 
+            this.loanTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.loanTypeComboBox.FormattingEnabled = true;
+            this.loanTypeComboBox.Items.AddRange(new object[] {
+            "Individual",
+            "Business",
+            "Educatioal",
+            "Marriage",
+            "Other"});
+            this.loanTypeComboBox.Location = new System.Drawing.Point(204, 161);
+            this.loanTypeComboBox.Name = "loanTypeComboBox";
+            this.loanTypeComboBox.Size = new System.Drawing.Size(235, 28);
+            this.loanTypeComboBox.TabIndex = 5;
+            // 
+            // loanAmountTextBox
+            // 
+            this.loanAmountTextBox.Location = new System.Drawing.Point(204, 127);
+            this.loanAmountTextBox.Name = "loanAmountTextBox";
+            this.loanAmountTextBox.Size = new System.Drawing.Size(235, 26);
+            this.loanAmountTextBox.TabIndex = 4;
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Location = new System.Drawing.Point(204, 92);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(235, 26);
+            this.nameTextBox.TabIndex = 3;
+            // 
+            // customerIdTextBox
+            // 
+            this.customerIdTextBox.Location = new System.Drawing.Point(204, 57);
+            this.customerIdTextBox.Name = "customerIdTextBox";
+            this.customerIdTextBox.Size = new System.Drawing.Size(235, 26);
+            this.customerIdTextBox.TabIndex = 2;
+            // 
+            // loanIdTextBox
+            // 
+            this.loanIdTextBox.Location = new System.Drawing.Point(204, 22);
+            this.loanIdTextBox.Name = "loanIdTextBox";
+            this.loanIdTextBox.ReadOnly = true;
+            this.loanIdTextBox.Size = new System.Drawing.Size(235, 26);
+            this.loanIdTextBox.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(108, 164);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 20);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Loan Type :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(86, 130);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 20);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Loan Amount :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(139, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Name :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(124, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 20);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Loan ID :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(92, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Customer ID :";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.cashDueTextBox);
+            this.groupBox3.Controls.Add(this.cashReceivedTextBox);
+            this.groupBox3.Controls.Add(this.loanAmount2TextBox);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.Control;
+            this.groupBox3.Location = new System.Drawing.Point(78, 349);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(549, 107);
+            this.groupBox3.TabIndex = 20;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Additional Information";
+            // 
+            // cashDueTextBox
+            // 
+            this.cashDueTextBox.Location = new System.Drawing.Point(396, 65);
+            this.cashDueTextBox.Name = "cashDueTextBox";
+            this.cashDueTextBox.ReadOnly = true;
+            this.cashDueTextBox.Size = new System.Drawing.Size(144, 26);
+            this.cashDueTextBox.TabIndex = 5;
+            // 
+            // cashReceivedTextBox
+            // 
+            this.cashReceivedTextBox.Location = new System.Drawing.Point(137, 65);
+            this.cashReceivedTextBox.Name = "cashReceivedTextBox";
+            this.cashReceivedTextBox.ReadOnly = true;
+            this.cashReceivedTextBox.Size = new System.Drawing.Size(144, 26);
+            this.cashReceivedTextBox.TabIndex = 4;
+            // 
+            // loanAmount2TextBox
+            // 
+            this.loanAmount2TextBox.Location = new System.Drawing.Point(227, 26);
+            this.loanAmount2TextBox.Name = "loanAmount2TextBox";
+            this.loanAmount2TextBox.ReadOnly = true;
+            this.loanAmount2TextBox.Size = new System.Drawing.Size(175, 26);
+            this.loanAmount2TextBox.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(302, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 20);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Cash Due :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 68);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(124, 20);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Cash Received :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(108, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Loan Amount :";
+            // 
             // LoanInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -481,9 +713,13 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(933, 569);
-            this.Controls.Add(this.menuPanel);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.nextButton);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -492,8 +728,6 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoanInformation_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.menuPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -504,6 +738,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -515,13 +755,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label userFullNameTextBox;
         private System.Windows.Forms.Button menuButton;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel menuPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -540,5 +773,32 @@
         private System.Windows.Forms.Button menuAccusativeCaseButton;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button printButton;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Button nextButton;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox loanAmountTextBox;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox customerIdTextBox;
+        private System.Windows.Forms.TextBox loanIdTextBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox loanTypeComboBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox cashDueTextBox;
+        private System.Windows.Forms.TextBox cashReceivedTextBox;
+        private System.Windows.Forms.TextBox loanAmount2TextBox;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }

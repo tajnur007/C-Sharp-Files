@@ -121,6 +121,7 @@
             this.confirmPasswordTextBox.Name = "confirmPasswordTextBox";
             this.confirmPasswordTextBox.Size = new System.Drawing.Size(258, 26);
             this.confirmPasswordTextBox.TabIndex = 6;
+            this.confirmPasswordTextBox.UseSystemPasswordChar = true;
             // 
             // passwordTextBox
             // 
@@ -128,6 +129,7 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(258, 26);
             this.passwordTextBox.TabIndex = 5;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             // 
             // mobileNumberTextBox
             // 

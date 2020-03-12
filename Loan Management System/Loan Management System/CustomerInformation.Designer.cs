@@ -125,6 +125,7 @@
             // userFullNameTextBox
             // 
             this.userFullNameTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.userFullNameTextBox.ForeColor = System.Drawing.SystemColors.Highlight;
             this.userFullNameTextBox.Location = new System.Drawing.Point(600, 12);
             this.userFullNameTextBox.Name = "userFullNameTextBox";
             this.userFullNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -390,6 +391,7 @@
             // 
             this.customerIdTextBox.Location = new System.Drawing.Point(201, 35);
             this.customerIdTextBox.Name = "customerIdTextBox";
+            this.customerIdTextBox.ReadOnly = true;
             this.customerIdTextBox.Size = new System.Drawing.Size(289, 26);
             this.customerIdTextBox.TabIndex = 18;
             // 

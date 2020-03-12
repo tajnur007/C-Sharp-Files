@@ -127,6 +127,7 @@
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(278, 30);
             this.userNameTextBox.TabIndex = 3;
+            this.userNameTextBox.TextChanged += new System.EventHandler(this.userNameTextBox_TextChanged);
             // 
             // loginUserNameLabel
             // 

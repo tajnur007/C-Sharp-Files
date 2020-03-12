@@ -17,6 +17,28 @@ namespace Loan_Management_System
         {
             InitializeComponent();
             userFullNameTextBox.Text = fullName;
+
+            load_customer_id();
+        }
+
+        public void load_customer_id()
+        {
+            string sqlQuery = "SELECT * FROM statistic WHERE type_name = 'Customer';";
+
+            SqlConnection con = new SqlConnection("Data Source=PC-TAJNUR\\SQLEXPRESS;Initial Catalog=LMS;Integrated Security=True");
+            SqlDataAdapter da;
+            DataTable dt = new DataTable();
+            DataRow dr;
+
+            con.Open();
+            da = new SqlDataAdapter(sqlQuery, con);
+            da.Fill(dt);
+            dr = dt.Rows[0];
+            con.Close();
+
+            int count = Convert.ToInt32(dr[1]);
+            count += 1000001;
+            customerIdTextBox.Text = count.ToString();
         }
 
         private void CustomerInformation_FormClosed(object sender, FormClosedEventArgs e)
@@ -114,7 +136,7 @@ namespace Loan_Management_System
             {
                 string searchId = searchTextBox.Text.ToString();
 
-                string sqlQuery = "SELECT * FROM customer_information WHERE id = '" + searchId + "';";
+                string sqlQuery = "SELECT * FROM customer_information WHERE id=" + searchId + ";";
 
                 SqlConnection con = new SqlConnection("Data Source=PC-TAJNUR\\SQLEXPRESS;Initial Catalog=LMS;Integrated Security=True");
                 SqlDataAdapter da;
@@ -137,7 +159,7 @@ namespace Loan_Management_System
                 string gender = dr[7].ToString();
                 string ms = dr[8].ToString();
                 string religion = dr[9].ToString();
-
+                                
                 if (dt.Rows.Count == 1)
                 {
                     customerIdTextBox.Text = id;
@@ -155,8 +177,20 @@ namespace Loan_Management_System
             }
             catch (Exception error)
             {
-                MessageBox.Show("Customer ID not found.");
-                searchTextBox.Text = "";
+                MessageBox.Show("Customer ID not found.", "Wrong ID");
+                searchTextBox.Text = null;
+                customerIdTextBox.Text = null;
+                customerFullNameTextBox.Text = null;
+                fatherNameTextBox.Text = null;
+                motherNameTextBox.Text = null;
+                addressTextBox.Text = null;
+                dateOfBirthTextBox.Text = null;
+                nationalIdTextBox.Text = null;
+                genderComboBox.Text = null;
+                maritalStatusComboBox.Text = null;
+                religionComboBox.Text = null;
+
+                load_customer_id();
             }
         }
 
@@ -198,6 +232,24 @@ namespace Loan_Management_System
                 genderComboBox.Text = null;
                 maritalStatusComboBox.Text = null;
                 religionComboBox.Text = null;
+
+                sqlQuery = "SELECT * FROM statistic WHERE type_name = 'Customer';";
+                SqlDataAdapter da;
+                DataTable dt = new DataTable();
+                DataRow dr;
+
+                con.Open();
+                da = new SqlDataAdapter(sqlQuery, con);
+                da.Fill(dt);
+                dr = dt.Rows[0];
+                int count = Convert.ToInt32(dr[1]);
+                count++;
+                sqlQuery = "update statistic set total_count = " + count.ToString() + " where type_name = 'Customer';";
+                SqlCommand sqlCommand = new SqlCommand(sqlQuery, con);
+                sqlCommand.ExecuteScalar();
+                con.Close();
+
+                load_customer_id();
             }
             catch (Exception error)
             {
@@ -263,7 +315,7 @@ namespace Loan_Management_System
                 maritalStatusComboBox.Text = null;
                 religionComboBox.Text = null;
 
-
+                load_customer_id();
             }
             catch (Exception error)
             {
@@ -318,6 +370,8 @@ namespace Loan_Management_System
                 maritalStatusComboBox.Text = null;
                 religionComboBox.Text = null;
 
+                load_customer_id();
+
             }
             catch (Exception error)
             {
@@ -341,5 +395,7 @@ namespace Loan_Management_System
             LoanInformation loanInformation = new LoanInformation(fullName);
             loanInformation.Show();
         }
+
+
     }
 }

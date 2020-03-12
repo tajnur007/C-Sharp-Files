@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Loan_Management_System
 {
@@ -101,6 +102,96 @@ namespace Loan_Management_System
             this.Hide();
             AboutUs aboutUs = new AboutUs(fullName);
             aboutUs.Show();
+        }
+
+
+        //Control Buttons
+        //Search Button Procedure
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string searchId = searchTextBox.Text.ToString();
+
+                string sqlQuery = "SELECT * FROM loan_information WHERE loan_id =" + searchId + ";";
+
+                SqlConnection con = new SqlConnection("Data Source=PC-TAJNUR\\SQLEXPRESS;Initial Catalog=LMS;Integrated Security=True");
+                SqlDataAdapter da;
+                DataTable dt = new DataTable();
+                DataRow dr;
+
+                con.Open();
+                da = new SqlDataAdapter(sqlQuery, con);
+                da.Fill(dt);
+                con.Close();
+
+                dr = dt.Rows[0];
+                string loanId = dr[0].ToString();
+                string details = dr[10].ToString();
+
+                if (dt.Rows.Count == 1)
+                {
+                    loanIdTextBox.Text = loanId;
+                    detailsTextBox.Text = details;
+                }
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Loan ID not found.", "Wrong ID");
+                searchTextBox.Text = null;
+                loanIdTextBox.Text = null;
+                detailsTextBox.Text = null;
+            }
+        }
+
+        //Save Button Procedure
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string loanId = loanIdTextBox.Text.ToString();
+                string details = detailsTextBox.Text.ToString();
+
+                string sqlQuery = "UPDATE loan_information SET accusative_case = '" + details + "' WHERE loan_id = " + loanId + ";";
+
+                SqlConnection con = new SqlConnection("Data Source=PC-TAJNUR\\SQLEXPRESS;Initial Catalog=LMS;Integrated Security=True");
+                SqlCommand sqlcmd = new SqlCommand(sqlQuery, con);
+                con.Open();
+                sqlcmd.ExecuteScalar();
+                con.Close();
+
+                MessageBox.Show("Record saved successfully.", "Successful");
+
+                loanIdTextBox.Text = null;
+                detailsTextBox.Text = null;
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Give correct input", "Wrong Information");
+
+            }
+        }
+
+
+
+
+        //Next page
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            String fullName = userFullNameTextBox.Text.ToString();
+            this.Hide();
+            LoanAgreement loanAgreement = new LoanAgreement(fullName);
+            loanAgreement.Show();
+        }
+
+        //Previous page
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            String fullName = userFullNameTextBox.Text.ToString();
+            this.Hide();
+            SattlementDetails sattlementDetails = new SattlementDetails(fullName);
+            sattlementDetails.Show();
         }
 
     }

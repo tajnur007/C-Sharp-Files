@@ -94,6 +94,7 @@
             // userFullNameTextBox
             // 
             this.userFullNameTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.userFullNameTextBox.ForeColor = System.Drawing.SystemColors.Highlight;
             this.userFullNameTextBox.Location = new System.Drawing.Point(600, 12);
             this.userFullNameTextBox.Name = "userFullNameTextBox";
             this.userFullNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

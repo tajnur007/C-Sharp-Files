@@ -74,6 +74,11 @@ namespace Loan_Management_System
             ForgotPassword forgotPassword = new ForgotPassword();
             forgotPassword.Show();
         }
+
+        private void userNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
